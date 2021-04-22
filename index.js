@@ -29,14 +29,6 @@ process.stdin.on('data', data => {
     feed.append(sm.machine);
 });
 
-// feed.createReadStream({live: true})
-//     .on('data', data => {
-//         console.log("Updating state:");
-//         console.log("---------------");
-//         console.log(data);
-//         console.log("---------------");
-//     });
-
 feed.ready(() => {
     console.log("Seeding @ ", feed.key.toString('hex'));
     

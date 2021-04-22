@@ -1,0 +1,4 @@
+.DS_Store
+/node_modules
+/feed_storage
+/clone_storage

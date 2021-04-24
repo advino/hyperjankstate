@@ -20,7 +20,6 @@ let m = {
 let swarm = hyperswarm();
 let sm = new StateMachine(m);
 
-
 process.stdin.on('data', data => {
     
     let d = data.toString().trim();
@@ -37,6 +36,7 @@ feed.ready(() => {
             if(err) throw Error("Error in retrieving feed head");
 
             sm.updateMachine(data);
+            sm.getState();
         });
     }    
     

@@ -36,7 +36,7 @@ feed.ready(() => {
             if(err) throw Error("Error retrieving head from feed");
             
             sm.updateMachine(data);
-            sm.getState();
+            sm.getState(); 
         });
     });
 });
